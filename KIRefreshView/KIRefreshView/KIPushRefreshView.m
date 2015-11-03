@@ -44,7 +44,6 @@
     [super layoutSubviews];
     
     CGFloat width = CGRectGetWidth(self.frame);
-    CGFloat height = CGRectGetHeight(self.frame);
     
     CGFloat viewHeight = [self pushRefreshViewHeight];
     
