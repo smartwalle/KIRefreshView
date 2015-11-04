@@ -15,7 +15,7 @@
 static char KI_UPDATE_CONTENT_INSET_WITH_PULL_REFRESH_VIEW;
 static char KI_UPDATE_CONTENT_INSET_WITH_PUSH_REFRESH_VIEW;
 
-@implementation UIScrollView (KIAdditiions)
+@implementation UIScrollView (KIRefreshView)
 
 
 - (void)setUpdateContentInsetWithPullRefreshView:(BOOL)updateContentInsetWithPullRefreshView {

@@ -10,7 +10,7 @@
 #import "KIPullRefreshView.h"
 #import "KIPushRefreshView.h"
 
-@interface UIScrollView (KIAdditiions)
+@interface UIScrollView (KIRefreshView)
 
 @property (nonatomic, assign) BOOL updateContentInsetWithPullRefreshView;
 @property (nonatomic, assign) BOOL updateContentInsetWithPushRefreshView;
