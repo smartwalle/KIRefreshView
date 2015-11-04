@@ -17,7 +17,7 @@
 		18BD6DC31BE8625500B8CBF9 /* KIPullRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DBD1BE8625500B8CBF9 /* KIPullRefreshView.m */; };
 		18BD6DC41BE8625500B8CBF9 /* KIPushRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DBF1BE8625500B8CBF9 /* KIPushRefreshView.m */; };
 		18BD6DC51BE8625500B8CBF9 /* refreshArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BD6DC01BE8625500B8CBF9 /* refreshArrow@2x.png */; };
-		18BD6DC61BE8625500B8CBF9 /* UIScrollView+KIAdditiions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DC21BE8625500B8CBF9 /* UIScrollView+KIAdditiions.m */; };
+		18BD6DC61BE8625500B8CBF9 /* UIScrollView+KIRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD6DC21BE8625500B8CBF9 /* UIScrollView+KIRefreshView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		18BD6DBE1BE8625500B8CBF9 /* KIPushRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIPushRefreshView.h; sourceTree = "<group>"; };
 		18BD6DBF1BE8625500B8CBF9 /* KIPushRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIPushRefreshView.m; sourceTree = "<group>"; };
 		18BD6DC01BE8625500B8CBF9 /* refreshArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refreshArrow@2x.png"; sourceTree = "<group>"; };
-		18BD6DC11BE8625500B8CBF9 /* UIScrollView+KIAdditiions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KIAdditiions.h"; sourceTree = "<group>"; };
-		18BD6DC21BE8625500B8CBF9 /* UIScrollView+KIAdditiions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KIAdditiions.m"; sourceTree = "<group>"; };
+		18BD6DC11BE8625500B8CBF9 /* UIScrollView+KIRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KIRefreshView.h"; sourceTree = "<group>"; };
+		18BD6DC21BE8625500B8CBF9 /* UIScrollView+KIRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KIRefreshView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +139,8 @@
 				18BD6DBE1BE8625500B8CBF9 /* KIPushRefreshView.h */,
 				18BD6DBF1BE8625500B8CBF9 /* KIPushRefreshView.m */,
 				18BD6DC01BE8625500B8CBF9 /* refreshArrow@2x.png */,
-				18BD6DC11BE8625500B8CBF9 /* UIScrollView+KIAdditiions.h */,
-				18BD6DC21BE8625500B8CBF9 /* UIScrollView+KIAdditiions.m */,
+				18BD6DC11BE8625500B8CBF9 /* UIScrollView+KIRefreshView.h */,
+				18BD6DC21BE8625500B8CBF9 /* UIScrollView+KIRefreshView.m */,
 			);
 			path = KIRefreshView;
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BD6DC41BE8625500B8CBF9 /* KIPushRefreshView.m in Sources */,
-				18BD6DC61BE8625500B8CBF9 /* UIScrollView+KIAdditiions.m in Sources */,
+				18BD6DC61BE8625500B8CBF9 /* UIScrollView+KIRefreshView.m in Sources */,
 				18BD6D9E1BE8537200B8CBF9 /* ViewController.m in Sources */,
 				18BD6DC31BE8625500B8CBF9 /* KIPullRefreshView.m in Sources */,
 				18BD6D9B1BE8537100B8CBF9 /* AppDelegate.m in Sources */,
@@ -442,6 +442,7 @@
 				18BD6DB71BE8537200B8CBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18BD6DB81BE8537200B8CBF9 /* Build configuration list for PBXNativeTarget "KIRefreshViewTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +451,7 @@
 				18BD6DBA1BE8537200B8CBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 杨 烽. All rights reserved.
 //
 
-#import "UIScrollView+KIAdditiions.h"
+#import "UIScrollView+KIRefreshView.h"
 #import <objc/runtime.h>
 
 #define kPullRefreshViewTag 917996695

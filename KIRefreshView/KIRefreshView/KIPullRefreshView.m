@@ -7,7 +7,7 @@
 //
 
 #import "KIPullRefreshView.h"
-#import "UIScrollView+KIAdditiions.h"
+#import "UIScrollView+KIRefreshView.h"
 
 @interface KIPullRefreshView () {
 }

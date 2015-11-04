@@ -7,7 +7,7 @@
 //
 
 #import "KIPushRefreshView.h"
-#import "UIScrollView+KIAdditiions.h"
+#import "UIScrollView+KIRefreshView.h"
 
 @interface KIPushRefreshView ()
 @property (nonatomic, assign) KIPushRefreshState    state;
