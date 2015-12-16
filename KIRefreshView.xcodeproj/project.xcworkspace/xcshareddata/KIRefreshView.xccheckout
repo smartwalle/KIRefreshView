@@ -12,6 +12,8 @@
 	<dict>
 		<key>1A20AA9062136E219282A541BC4DDB0B0E523231</key>
 		<string>github.com:smartwalle/KIRefreshView.git</string>
+		<key>F9F203C792AD199C8013187F4DFADF9563B39E15</key>
+		<string>gitlab.com:smoktech/vaping_tour_ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>KIRefreshView.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>1A20AA9062136E219282A541BC4DDB0B0E523231</key>
 		<string>../..</string>
+		<key>F9F203C792AD199C8013187F4DFADF9563B39E15</key>
+		<string>../../../../Workspace/Project/VapingTour</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:smartwalle/KIRefreshView.git</string>
@@ -35,6 +39,14 @@
 			<string>1A20AA9062136E219282A541BC4DDB0B0E523231</string>
 			<key>IDESourceControlWCCName</key>
 			<string>KIRefreshView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F9F203C792AD199C8013187F4DFADF9563B39E15</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VapingTour</string>
 		</dict>
 	</array>
 </dict>

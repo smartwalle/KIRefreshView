@@ -119,29 +119,29 @@ static char KI_UPDATE_CONTENT_INSET_WITH_PUSH_REFRESH_VIEW;
 }
 
 - (void)initPushRefreshView:(NSString *)viewIdentifer delegate:(id<KIPushRefreshViewDelegate>)delegate {
-    KIPushRefreshView *refreshView = (KIPushRefreshView *)[self viewWithTag:kPushRefreshViewTag];
-    if (refreshView == nil) {
+    KIPushRefreshView *pushRefreshView = (KIPushRefreshView *)[self viewWithTag:kPushRefreshViewTag];
+    if (pushRefreshView == nil) {
         
         Class class = NSClassFromString(viewIdentifer);
-        refreshView = [[class alloc] init];
+        pushRefreshView = [[class alloc] init];
         
-        if (refreshView != nil) {
-            [refreshView setDelegate:delegate];
-            [refreshView setTag:kPushRefreshViewTag];
+        if (pushRefreshView != nil) {
+            [pushRefreshView setDelegate:delegate];
+            [pushRefreshView setTag:kPushRefreshViewTag];
             
-            [refreshView setFrame:CGRectMake(0,
+            [pushRefreshView setFrame:CGRectMake(0,
                                              self.contentSize.height,
                                              self.bounds.size.width,
                                              self.bounds.size.height)];
-            [self addSubview:refreshView];
+            [self addSubview:pushRefreshView];
         }
     }
-    
 }
 
 - (KIPushRefreshView *)pushRefreshView {
     KIPushRefreshView *refreshView = (KIPushRefreshView *)[self viewWithTag:kPushRefreshViewTag];
     CGRect frame = refreshView.frame;
+    frame.origin.x = 0;
     frame.size.width = CGRectGetWidth(self.frame);
     [refreshView setFrame:frame];
     return refreshView;

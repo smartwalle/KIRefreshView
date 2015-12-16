@@ -271,8 +271,12 @@
         CGPoint oldOffset = [[change objectForKey:NSKeyValueChangeOldKey] CGPointValue];
         CGPoint newOffset = [[change objectForKey:NSKeyValueChangeNewKey] CGPointValue];
         
-        
         [self scrollView:scrollView oldOffset:oldOffset newOffset:newOffset];
+        
+        CGRect frame = self.frame;
+        frame.origin.x = 0;
+        frame.size.width = CGRectGetWidth(scrollView.frame);
+        [self setFrame:frame];
     } else if ([keyPath isEqualToString:@"contentInset"]) {
 //        UIEdgeInsets oldEdgeInset = [[change objectForKey:NSKeyValueChangeOldKey] UIEdgeInsetsValue];
         UIEdgeInsets newEdgeInset = [[change objectForKey:NSKeyValueChangeNewKey] UIEdgeInsetsValue];

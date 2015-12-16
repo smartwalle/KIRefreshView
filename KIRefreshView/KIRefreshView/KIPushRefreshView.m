@@ -286,15 +286,16 @@
 - (void)updateFrame:(UIScrollView *)scrollView {
     CGFloat height = scrollView.bounds.size.height;
     CGFloat contentSizeHeight = scrollView.contentSize.height;
+    CGFloat y = MAX(height-self.defaultEdgeInsets.top, contentSizeHeight+self.defaultEdgeInsets.bottom) - self.bottomOffset;
+    
     [self setFrame:CGRectMake(0,
-                              MAX(height-self.defaultEdgeInsets.top, contentSizeHeight+self.defaultEdgeInsets.bottom) - self.bottomOffset,
-                              self.bounds.size.width,
-                              self.bounds.size.height)];
+                              y,
+                              CGRectGetWidth(scrollView.bounds),
+                              CGRectGetHeight(scrollView.bounds))];
     
     if (self.state == KIPushRefreshLoading) {
         CGFloat offset = scrollView.bounds.size.height - scrollView.contentSize.height + [self _pushRefreshViewHeight];
         offset = MAX(offset - self.defaultEdgeInsets.top, [self _pushRefreshViewHeight] + self.defaultEdgeInsets.bottom);
-
         [self update:scrollView edgeInsetBottom:offset];
     }
 }
