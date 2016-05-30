@@ -105,8 +105,6 @@
     }
     
     if (self.state == KIPullRefreshPulling || preload) {
-        [self setState:KIPullRefreshLoading];
-        
         [UIView animateWithDuration:0.2f
                               delay:0
                             options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState
@@ -117,6 +115,7 @@
 //                             [scrollView setContentInset:insets];
                              [self update:scrollView edgeInsetTop:[self _pullRefreshViewHeight]];
                          } completion:^(BOOL finished) {
+                             [self setState:KIPullRefreshLoading];
                          }];
     }
 }
